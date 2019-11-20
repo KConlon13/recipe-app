@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './recipe.module.css'
-import { styles } from 'ansi-colors';
 
 const Recipe = ({title, calories, image, ingredients}) => {
     return(
