@@ -1,3 +1,6 @@
+/* @import url(//db.onlinewebfonts.com/c/827708a62f4e0f867397f1e9ef08634c?family=Airbag); */
+@import url(//db.onlinewebfonts.com/c/ab83b275830b2d585ea027c47e3b237a?family=GraphiqueW01-Regular);
+
 .App {
   min-height: 100vh;
   background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
@@ -14,6 +17,7 @@
   width: 50%;
   border: none;
   padding: 10px;
+  margin-top: 20px;
 }
 
 .search-button{
@@ -21,10 +25,35 @@
   background: dodgerblue ;
   padding: 10px 20px;
   color: white;
+  margin-top: 20px;
 }
 
 .recipes{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+#title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  /* font-family: 'Parisienne', cursive; */
+  /* font-family: "Airbag"; */
+  font-family: "GraphiqueW01-Regular";
+  color: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  font-size: 65px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgb(9, 117, 81);
+  color: white;
+  box-shadow: 0px 5px 25px rgb(9, 117, 81);
 }
