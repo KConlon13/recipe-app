@@ -8,10 +8,23 @@
     background: white;
     align-items: center;
     min-width: 40%;
+    text-overflow: inherit;
+    padding: 5px 15px 5px 15px;
+    overflow: wrap;
+    max-width: 200px;
+}
+
+#calories {
+    align-items: center;
 }
 
 .image {
     border-radius: 50%;
     height: 200px;
     width: 200px;
+    padding: 20px;
+}
+
+.ingredients {
+    width: 500px;
 }
