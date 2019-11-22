@@ -51,7 +51,7 @@ const App = () => {
           ingredients={recipe.recipe.ingredients}
           url={recipe.recipe.url}
           />)}
-        </div>
+      </div>
     </div>
   );
 }

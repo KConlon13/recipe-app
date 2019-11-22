@@ -10,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 13px;
 }
 
 .search-bar{
@@ -62,11 +63,11 @@
   margin-top: 40px;
   margin-left: 20px;
   margin-right: 20px;
-  padding-bottom: 30px;
 }
 
 .card {
   margin-bottom: 30px;
+  box-shadow: 0px 5px 10px rgb(9, 117, 81);
 }
 
 a {
