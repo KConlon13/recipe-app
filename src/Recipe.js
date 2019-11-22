@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './recipe.module.css'
 
-const Recipe = ({title, calories, image, ingredients}) => {
+const Recipe = ({title, calories, image, ingredients, url}) => {
 
                     let ingredientList = ingredients.map(ingredient => 
                     <li>{ingredient.text}</li>)
@@ -21,7 +21,9 @@ const Recipe = ({title, calories, image, ingredients}) => {
             <div className="card">
                 <img src={image} className="card-img-top"/>
                 <div className="card-body">
-                    <h5 className="card-title">{title}</h5>
+                    <a href={url} target="_blank">
+                        <h5 className="card-title">{title}</h5>
+                    </a>
                     <p className="card-text">{ingredientList}</p>
                     <p className="card-text"><small className="text-muted">{Math.ceil(calories)} Calories</small></p>
                 </div>
