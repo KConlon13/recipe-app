@@ -17,6 +17,7 @@
   border: none;
   padding: 10px;
   margin-top: 20px;
+  border-radius: 0.3em;
 }
 
 .search-button{
@@ -25,13 +26,14 @@
   padding: 10px 20px;
   color: white;
   margin-top: 20px;
+  border-radius: 0.3em;
 }
 
-.recipes{
+/* .recipes{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-}
+} */
 
 #title{
   display: flex;
@@ -53,4 +55,15 @@
   background-color: rgb(9, 117, 81);
   color: white;
   box-shadow: 0px 5px 25px rgb(9, 117, 81);
+}
+
+.card-columns {
+  margin-top: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding-bottom: 30px;
+}
+
+.card {
+  margin-bottom: 30px;
 }

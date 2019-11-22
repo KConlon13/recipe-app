@@ -41,7 +41,7 @@ const App = () => {
         <button className="search-button" type="submit">Search</button>
       </form>
 
-      <div className="recipes">
+      <div className="card-columns">
         {recipes.map(recipe => 
           <Recipe
           key={recipe.recipe.label} 
