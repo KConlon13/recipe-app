@@ -10,7 +10,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 13px;
+  /* margin-top: 13px; */
+  padding-top: 11px;
 }
 
 .search-bar{
@@ -31,15 +32,9 @@
   border-radius: 0.2em;
 }
 
-/* .recipes{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-} */
-
 #title{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin-top: 0px;
   padding-top: 20px;
@@ -47,11 +42,12 @@
   font-family: "GraphiqueW01-Regular";
   color: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   font-size: 65px;
+  padding-left: 35%;
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   min-height: 10vh;
   background-color: #097551;
@@ -72,4 +68,9 @@
 
 a {
   color: black;
+}
+
+.navbar-toggler {
+  background-color: white;
+  margin-left: 20%;
 }
