@@ -16,13 +16,16 @@ function Navbar(){
                 <div class="collapse" id="navbarToggleExternalContent">
                     {/* <div class="bg p-4"> */}
                     <div class="lemmetrythis">    
-                        
+                        {/* <h4>Menu</h4> */}
                         <ul className="nav-links">
                             <Link style={navStyle} to="/">
                                 <p>Home</p>
                             </Link>
                             <Link style={navStyle} to="/about">
                                 <p>About</p>
+                            </Link>
+                            <Link style={navStyle} to="/featured">
+                                <p>Featured</p>
                             </Link>
                         </ul>
 
