@@ -34,7 +34,6 @@
 
 #title{
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin-top: 0px;
   padding-top: 20px;
@@ -43,11 +42,12 @@
   color: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   font-size: 65px;
   padding-left: 35%;
+  /* padding-right: 35%; */
 }
 
 .nav {
   display: flex;
-  /* justify-content: space-around; */
+  /* justify-content: space-between; */
   align-items: center;
   min-height: 10vh;
   background-color: #097551;
@@ -72,5 +72,14 @@ a {
 
 .navbar-toggler {
   background-color: white;
-  margin-left: 20%;
+  margin-left: 18%;
+}
+
+.bg.p-4 {
+  padding-right: 0%;
+}
+
+.lemmetrythis {
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
