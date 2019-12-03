@@ -21,7 +21,7 @@ const Recipe = ({title, calories, image, ingredients, url}) => {
             <div className="card">
                 <img src={image} className="card-img-top"/>
                 <div className="card-body">
-                    <a href={url} target="_blank">
+                    <a href={url} rel="noopener noreferrer" target="_blank">
                         <h5 className="card-title">{title}</h5>
                     </a>
                     <p className="card-text">{ingredientList}</p>
