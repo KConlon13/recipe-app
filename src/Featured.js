@@ -35,7 +35,7 @@ const Featured = () => {
 
   return (
     <div className="App">
-        <h1>Featured Seasonal Recipes</h1>
+        <h1 className="additional-title" >Featured Seasonal Recipes</h1>
 
       <div className="card-columns">
         {recipes.map(recipe => 
