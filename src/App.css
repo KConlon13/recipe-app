@@ -41,7 +41,7 @@
   font-family: "GraphiqueW01-Regular";
   color: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
   font-size: 65px;
-  padding-left: 35%;
+  padding-left: 34%;
   /* padding-right: 35%; */
   /* white-space: nowrap;
   overflow: hidden; */
@@ -72,10 +72,10 @@ a {
   color: black;
 }
 
-.navbar-toggler {
+/* .navbar-toggler {
   background-color: white;
   margin-left: 18%;
-}
+} */
 
 .bg.p-4 {
   padding-right: 0%;
@@ -104,4 +104,18 @@ a {
   text-shadow: 3px 3px 4px rgb(7, 85, 59);
   font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
   font-weight: bolder;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: rgb(255, 255, 255);
+  background-color: rgb(9, 117, 81);
+  margin-left: 18%;
+}
+.custom-toggler .navbar-toggler-icon {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+color: rgb(255, 255, 255);
+}
+
+.nav-links {
+  padding-left: 20px;
 }

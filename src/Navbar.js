@@ -9,9 +9,12 @@ function Navbar(){
         color: 'white',
     }
 
+    const menuStyle = {
+        backgroundcolor: "white"
+    }
+
     return (
         <nav className="nav">
-
             <div class="pos-f-t">
                 <div class="collapse" id="navbarToggleExternalContent">
                     {/* <div class="bg p-4"> */}
@@ -28,12 +31,11 @@ function Navbar(){
                                 <p>Featured</p>
                             </Link>
                         </ul>
-
                     </div>
                 </div>
                 <nav class="navbar navbar-light">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" color="white"></span>
+                <button type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler ml-auto custom-toggler">
+                    <span class="navbar-toggler-icon" style={menuStyle}></span>
                 </button>
                 </nav>
             </div>
