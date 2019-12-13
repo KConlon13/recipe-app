@@ -33,6 +33,7 @@ const Home = () => {
     setSearch("")
   }
 
+  console.log(recipes)
   return (
     <div className="App">
       {/* <Navbar /> */}
@@ -41,23 +42,24 @@ const Home = () => {
         <button className="search-button" type="submit">Search</button>
       </form>
 
-    {recipes === [] ? 
-          <div class="d-flex justify-content-center">
+    {recipes != [] ? 
+        <div class="d-flex justify-content-center">
           <div class="spinner-border text-light m-5" role="status">
             <span class="sr-only">Loading...</span>
           </div>
-        </div> : 
-              <div className="card-columns">
-              {recipes.map(recipe => 
-                <Recipe
-                key={recipe.recipe.label} 
-                title={recipe.recipe.label} 
-                calories={recipe.recipe.calories} 
-                image={recipe.recipe.image}
-                ingredients={recipe.recipe.ingredients}
-                url={recipe.recipe.url}
-                />)}
-            </div>
+        </div> 
+        : 
+        <div className="card-columns">
+        {recipes.map(recipe => 
+          <Recipe
+          key={recipe.recipe.label} 
+          title={recipe.recipe.label} 
+          calories={recipe.recipe.calories} 
+          image={recipe.recipe.image}
+          ingredients={recipe.recipe.ingredients}
+          url={recipe.recipe.url}
+          />)}
+      </div>
     }
 
 
