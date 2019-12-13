@@ -48,6 +48,7 @@ const Featured = () => {
           url={recipe.recipe.url}
           />)}
       </div>
+
     </div>
   );
 

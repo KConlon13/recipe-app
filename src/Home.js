@@ -41,7 +41,34 @@ const Home = () => {
         <button className="search-button" type="submit">Search</button>
       </form>
 
-      <div className="card-columns">
+    {recipes === [] ? 
+          <div class="d-flex justify-content-center">
+          <div class="spinner-border text-light m-5" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div> : 
+              <div className="card-columns">
+              {recipes.map(recipe => 
+                <Recipe
+                key={recipe.recipe.label} 
+                title={recipe.recipe.label} 
+                calories={recipe.recipe.calories} 
+                image={recipe.recipe.image}
+                ingredients={recipe.recipe.ingredients}
+                url={recipe.recipe.url}
+                />)}
+            </div>
+    }
+
+
+
+    {/* // <div class="d-flex justify-content-center">
+    //   <div class="spinner-border text-light m-5" role="status">
+    //     <span class="sr-only">Loading...</span>
+    //   </div>
+    // </div> */}
+
+      {/* <div className="card-columns">
         {recipes.map(recipe => 
           <Recipe
           key={recipe.recipe.label} 
@@ -51,7 +78,7 @@ const Home = () => {
           ingredients={recipe.recipe.ingredients}
           url={recipe.recipe.url}
           />)}
-      </div>
+      </div> */}
     </div>
   );
 }
